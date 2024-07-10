@@ -54,9 +54,22 @@ Paper Review :
 
 ![insideout6](https://github.com/youngseoh/Insideout_emotionclassification/assets/100707876/9baaaf20-6915-4b77-95f3-7f990e6db3de)
 
-- transfer learning pretrained classification model 
+- transfer learning pretrained classification model
+  BaseModel을 정해두고, 조건들을 변경해가며 실험 진행
 
-    
+  [transfer learning pretrained clasification model Experiment 과정](https://fearless-gourd-ac8.notion.site/Insideout-emotion-classification-experiments-05d2e6a91d71456c8c9bb678dcc6933f)
+
+  최종적으로, 
+   1. HyperPrameter 
+     - batch size : 32 , epochs : 30 
+   2. Augmentation Method
+     - autoagumentation
+   3. Optimzier & Scheduler
+    - SGD & StepLR
+   4. Transfer Learning Model Architecture 
+    - ResNet50 
+
+**→ Test loss :	0.9067, Accuracy 76.98 %**
 
 ## Results
 
